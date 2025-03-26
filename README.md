@@ -1,6 +1,6 @@
 # WebDevLabs
 
-https://afeies.github.io/WebDevLabs/67250_webdevlabs/afeies-lab5/
+https://afeies.github.io/WebDevLabs/67250_webdevlabs/afeies-lab6/
 
 https://afeies.github.io/WebDevLabs/
 
