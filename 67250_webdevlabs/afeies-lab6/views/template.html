@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="../static/style.css">
     <link rel="stylesheet" href="../static/templates.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="../static/script.js" defer></script>
     <script src="../static/index.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,16 +14,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
-<body onload="addYear(); greetingFunc()">
+<body onload="addYear(); greetingFunc(); highlightActiveLinks()">
     <div class="container">
         <header>
             <h1 id="webname">Alex Feies</h1>
         </header>
         <nav>
-            <a href="../index.html">Home</a>
-            <a href="views/cv.html">CV</a>
-            <a href="views/contact.html">Contact me</a>
-            <a href="views/fun.html">For fun</a>
+            <i class="fas fa-bars" onclick="toggleNav()"></i>
+            <span id="navlinks">
+                <a href="../index.html">Home</a>
+                <a href="cv.html">CV</a>
+                <a href="contact.html">Contact me</a>
+                <a href="fun.html">For fun</a>
+                <a href="template.html">Template</a>
+            </span>
         </nav>
         <main>
             <section class="mainimg">

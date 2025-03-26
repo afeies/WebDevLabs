@@ -45,3 +45,25 @@ function addYear() {
     let yearElement = document.getElementById("copyYear");
     yearElement.innerHTML = year;
 }
+
+function toggleNav() {
+    let style = document.getElementById("navlinks").style;
+    if (style.display == "none") {
+        style.display = "";
+    } else {
+        style.display = "none";
+    }
+}
+
+function highlightActiveLinks() {
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll("nav a");
+  
+    navLinks.forEach(link => {
+        const linkPath = new URL(link.href, window.location.origin).pathname;
+  
+        if (linkPath === currentPath) {
+            link.classList.add('active');
+        }
+    });
+}

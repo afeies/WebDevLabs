@@ -18,6 +18,17 @@ nav a {
     margin-right: 15px;
 }
 
+nav a:hover {
+    color: green;
+    text-decoration: underline;
+}
+  
+nav a.active {
+    background-color: darkgreen;
+    color: white;
+    border-radius: 5px;
+}
+
 th {
     padding-top: 12px;
     padding-bottom: 12px;
@@ -106,4 +117,17 @@ input[type="submit"] {
 
 #item1, #item2, #item3, #item4 {
     margin: 5px;
+}
+
+h1 {
+    animation: textOpacityAnimation 2s infinite alternate;
+}
+  
+@keyframes textOpacityAnimation {
+    0% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 1;
+    }
 }

@@ -56,6 +56,10 @@ footer {
     padding: 10px;
 }
 
+i {
+    display: none !important;
+}
+
 @media (max-width: 768px) {
     .container {
         grid-template-areas:
@@ -74,5 +78,9 @@ footer {
           "maincontent"
           "bottomcontent";
         grid-template-columns: 1fr;
+    }
+
+    i {
+        display: inline-block !important;
     }
 }
